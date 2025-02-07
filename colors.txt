@@ -1,0 +1,6 @@
+orange - #F84E1D
+dark grey - #1D1D1F
+bg-light-grey- #F5F3F2
+bg-dark-grey- #EFEBE7
+text-dark-grey- #141416
+text-light-grey - #999999
