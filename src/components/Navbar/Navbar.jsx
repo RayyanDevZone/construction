@@ -1,7 +1,7 @@
 import { RiMenu4Line } from "react-icons/ri";
 const Navbar = () => {
   return (
-    <div className="h-22 flex flex-row items-center px-18 justify-between">
+    <div className="h-22 flex flex-row items-center px-18 justify-between font-lexend">
       <img src="https://html.themewant.com/elever/assets/images/logo/02.svg"></img>
       <div className="flex flex-row items-center gap-10 ">
   
