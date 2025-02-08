@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 const Topbar = () => {
   return (
-    <div className="h-14 w-full bg-[#1D1D1F] flex flex-row justify-between items-center px-16">
+    <div className="h-14 w-full bg-[#1D1D1F] flex flex-row justify-between items-center px-16 font-lexend ">
       <div className="contactdiv text-white flex flex-row">
         <p className="flex flex-row items-center px-10 gap-3">
           <IoIosPhonePortrait />
