@@ -16,7 +16,7 @@ const FirstPage = () => {
 
   return (
     <div
-      className="bg-black h-screen w-full bg-cover bg-center transition-all duration-1000"
+      className="bg-black h-screen w-full bg-cover bg-center transition-all duration-1000 "
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
     >
       <div className="flex flex-col justify-center items-start px-18 text-white font-lexend h-full">
