@@ -33,10 +33,10 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
-    <div className="min-h-screen h-auto w-full py-16 px-12 bg-[#f84e1d] flex flex-col items-center font-lexend">
-      <div className="w-full h-[120px] border-b-1 border-b-white flex flex-col justify-around">
+    <div className="min-h-screen h-auto w-full py-16 sm:px-12 px-4 bg-[#f84e1d] flex flex-col items-center font-lexend">
+      <div className="w-full min-h-[120px] border-b-1 border-b-white flex flex-col justify-around">
         <p className="uppercase text-white font-bold">Testimonials</p>
-        <p className="uppercase text-white text-4xl mb-8 mt-4 font-bold">
+        <p className="uppercase text-white sm:text-4xl text-3xl mb-8 mt-4 font-bold">
           We’re The Leader In Construction Industry
         </p>
       </div>
@@ -45,7 +45,7 @@ const Testimonials = () => {
         {testimonialsData.map((testimonial, index) => (
           <div
             key={index}
-            className="card h-[500px] w-[500px] ml-10 flex-shrink-0 flex flex-col items-start bg-white overflow-hidden shadow-lg rounded-xl"
+            className="card h-[500px] sm:w-[500px] w-[390px] sm:ml-10 flex-shrink-0 flex flex-col items-start bg-white overflow-hidden shadow-lg rounded-xl"
           >
             <div className="flex flex-row items-center gap-6 ">
               <img

@@ -1,4 +1,3 @@
-
 import { IoLocationOutline } from "react-icons/io5";
 
 const cardsData = [
@@ -30,12 +29,12 @@ const cardsData = [
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen h-auto flex flex-col sm:px-18 bg-[#EFEBE7] font-lexend">
-      <div className="w-full flex flex-row justify-between items-center mt-20">
+    <div className="min-h-screen h-auto flex flex-col sm:px-18 px-4 bg-[#EFEBE7] font-lexend">
+      <div className="w-full flex sm:flex-row flex-col justify-between sm:items-center items-start mt-20">
         <div>
-          <p className="text-5xl font-bold text-[#1D1D1F]">
-          What we create last 5+ years<br/>
-          for our customers
+          <p className="sm:text-5xl text-2xl font-bold text-[#1D1D1F]">
+            What we create last 5+ years<br/>
+            for our customers
           </p>
           <p className="text-sm mt-5 text-[#999999]">
             Quis nulla blandit vulputate morbi adipiscing sem vestibulum. Nulla
@@ -43,20 +42,20 @@ const Portfolio = () => {
             gravida lorem potenti.
           </p>
         </div>
-        <button className="bg-[#F84E1D] cursor-pointer text-white px-8 py-3 tracking-tighter rounded-md font-semibold text-xl">
+        <button className="bg-[#F84E1D] mt-5 sm:mt-0 cursor-pointer text-white px-8 py-3 tracking-tighter rounded-md font-semibold text-xl">
           More Portfolio
         </button>
       </div>
 
-      <div className="h-auto flex flex-row justify-between mt-10 mb-20">
+      <div className="h-auto flex  overflow-x-auto whitespace-nowrap hide-scrollbar mt-10 gap-16">
         {cardsData.map((card, index) => (
-          <div key={index} className="card w-[550px] h-[600px] rounded-2xl flex flex-col bg-white">
+          <div key={index} className="card sm:w-[550px] sm:h-[600px] h-[500px] w-[390px] flex-shrink-0 rounded-2xl flex flex-col bg-white">
             <div
               className="w-full h-3/5 rounded-t-2xl bg-cover bg-center px-12 py-8 flex flex-col justify-between text-white"
               style={{ backgroundImage: `url(${card.image})` }}
             >
               <div>
-                <p className="text-3xl font-bold">{card.title}</p>
+                <p className="sm:text-3xl text-xl font-bold">{card.title}</p>
                 <p className="text-sm">{card.subtitle}</p>
               </div>
               <p className="border border-white px-3 backdrop-blur-md py-2 w-40 rounded-md flex items-center justify-center">
