@@ -2,18 +2,18 @@ import { MdCheckCircle } from "react-icons/md";
 
 const Craftsmanship = () => {
   return (
-    <div className="py-20 w-full min-h-screen h-auto bg-white flex flex-row items-center px-16 font-lexend mb-10">
+    <div className="py-20 w-full min-h-screen h-auto bg-white flex sm:flex-row flex-col items-center sm:px-16 px-5 font-lexend mb-10">
       <img
         src="https://html.themewant.com/elever/assets/images/about/02.webp"
         className="h-[400px] w-[450px] "
       />
-      <div className="pl-10 flex flex-col">
-        <p className="text-4xl font-bold">
+      <div className="sm:pl-10 flex flex-col mt-8 sm:mt-0">
+        <p className="sm:text-4xl text-3xl font-bold">
           A Tradition of Craftsmanship, Innovation, and Client-Centered
           Solutions in Every
           <br /> Project
         </p>
-        <p className="mt-3 text-sm text-[#999999]">
+        <p className="mt-3 text-sm text-[#999999] leading-6">
           We build multi-family and affordable housing communities, industrial
           facilities, public and private healthcare facilities, fitness centers
           and office buildings. We improve the supply chain management process,
