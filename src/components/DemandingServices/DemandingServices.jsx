@@ -47,11 +47,11 @@ const DemandingServices = () => {
       >
         {" "}
       </div>
-      <div className="card-container w-full h-auto flex flex-row justify-center gap-8 mt-8 relative top-[-121px]">
+      <div className="card-container w-full h-auto flex flex-row justify-center gap-8 mt-8 relative top-[-121.5px]">
         {servicesData.map((service, index) => (
           <div key={index} className="card w-[350px] flex flex-col h-[300px] rounded-xl bg-white overflow-hidden font-lexend">
             <div className="h-1/3 flex flex-row items-center justify-between">
-              <div className="h-full bg-[#F84E1D] w-[100px] flex items-center justify-center">
+              <div className="h-full bg-[#F84E1D] w-[100px] flex items-center justify-center rounded-br-md">
                 <img src={service.image} alt="service icon" />
               </div>
               <p className="text-6xl text-[#EFEBE7] font-bold mr-10">{service.number}</p>
