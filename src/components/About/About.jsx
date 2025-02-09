@@ -24,36 +24,36 @@ const cardItems = [
 const About = () => {
   return (
     <div
-      className="h-[636px] w-full flex flex-col items-center px-16 font-lexend"
+      className="min-h-[636px] w-full flex flex-col items-center sm:px-16 font-lexend"
       style={{
         backgroundImage: `url("https://html.themewant.com/elever/assets/images/why-choose/01.webp")`,
       }}
     >
-      <div className="flex flex-row items-center justify-between w-full px-8 mt-16">
+      <div className="flex sm:flex-row flex-col sm:items-center items-start justify-between w-full px-8 mt-16">
         <div className="text-white">
           <p className="uppercase text-[#f84e1d]">About our company</p>
-          <p className="text-5xl mt-4 font-bold uppercase">
+          <p className="sm:text-5xl text-2xl mt-4 font-bold uppercase">
             We are The Leader In
             <br />
             Construction Industry{" "}
           </p>
         </div>
-        <button className="bg-[#F84E1D] cursor-pointer text-white px-8 py-3 tracking-tighter rounded-md font-semibold text-md">
+        <button className="bg-[#F84E1D] cursor-pointer text-white px-8 py-3 mt-5 sm:mt-0 tracking-tighter rounded-md font-semibold text-md">
           Make an Appointment
         </button>
       </div>
 
-      <div className="card-container w-full flex flex-row justify-center  mt-24">
+      <div className="card-container w-full flex sm:flex-row flex-col justify-center items-center  mt-24">
         {cardItems.map((item, index) => (
           <div
             key={index}
             className={`card flex flex-row h-[200px] w-[300px] justify-center items-center ${
               index === 0 || index === cardItems.length - 1
-                ? "border-t border-b border-[#2B2B30]"
-                : "border border-[#2B2B30]"
+                ? "sm:border-t border-b border-[#2B2B30]"
+                : "sm:border border-[#2B2B30]"
             }`}
           >
-            <div className="border border-gray-700 bg-[#141416] h-[75px] w-[75px] rounded-full mx-3 flex justify-center items-center">
+            <div className=" border border-gray-700 bg-[#141416] h-[75px] w-[75px] rounded-full mx-3 flex justify-center items-center">
               <img src={item.image} alt={item.title} className="h-[50px] w-[50px]" />
             </div>
             <div>
