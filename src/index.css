@@ -7,3 +7,11 @@
     --font-inter: "Inter", sans-serif; 
     --font-lexend: "Lexend", sans-serif; 
   }
+  /* Custom CSS to hide the scrollbar */
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
