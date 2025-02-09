@@ -19,13 +19,13 @@ const FirstPage = () => {
       className="bg-black h-screen w-full bg-cover bg-center transition-all duration-1000 "
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
     >
-      <div className="flex flex-col justify-center items-start px-18 text-white font-lexend h-full">
-        <p className="text-xl font-semibold">BUILDING THE BETTER FUTURE</p>
-        <p className="text-6xl mt-6 mb-6 font-bold">
+      <div className="flex flex-col justify-center sm:items-start items-center  sm:px-18 text-white font-lexend h-full">
+          <p className="text-xl font-semibold ">BUILDING THE BETTER FUTURE</p>
+        <p className="sm:text-6xl text-5xl text-center mt-6 mb-6 font-bold">
           Redefining Quality in Every <br />
           Brick and Beam
         </p>
-        <p className="text-sm mb-8">
+        <p className="text-sm mb-8 text-center">
           we provide a range of services including residential and commercial
           construction, <br />
           Renovations,Project Management, and custom builds.

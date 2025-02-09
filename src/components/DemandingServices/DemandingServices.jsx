@@ -25,7 +25,7 @@ const servicesData = [
 const DemandingServices = () => {
   return (
     <div className="w-full min-h-screen h-auto bg-[#EDE9E5]">
-      <div className="h-[200px] w-full  flex flex-row justify-between items-center px-16 font-lexend ">
+      <div className="h-[200px] w-full  flex sm:flex-row flex-col justify-between sm:items-center items-start sm:px-16 px-4 py-20 font-lexend ">
         <div>
           <p className="text-4xl font-bold">We Provide Demanding Services</p>
           <p className="mt-3 text-sm text-[#999999]">
@@ -34,20 +34,20 @@ const DemandingServices = () => {
             <br /> posuere sem. Id molestie mi arcu gravida lorem potenti.
           </p>
         </div>
-        <button className="bg-[#F84E1D] cursor-pointer text-white px-8 py-3 tracking-tighter rounded-md font-semibold text-lg flex flex-row items-center">
+        <button className="bg-[#F84E1D] cursor-pointer text-white px-8 py-3 my-3 tracking-tighter rounded-md font-semibold text-lg flex flex-row items-center">
           Book Appointment <FaLocationArrow className="ml-3" />
         </button>
       </div>
 
       <div
-        className="w-full h-[400px] rounded-xl"
+        className="w-full h-[400px] rounded-xl mt-27"
         style={{
           backgroundImage: `url("https://html.themewant.com/elever/assets/images/service/03.webp")`,
         }}
       >
         {" "}
       </div>
-      <div className="card-container w-full h-auto flex flex-row justify-center gap-8 mt-8 relative top-[-121.5px]">
+      <div className="card-container w-full h-auto flex sm:flex-row flex-col items-center justify-center gap-8 mt-8 relative top-[-121.5px]">
         {servicesData.map((service, index) => (
           <div key={index} className="card w-[350px] flex flex-col h-[300px] rounded-xl bg-white overflow-hidden font-lexend">
             <div className="h-1/3 flex flex-row items-center justify-between">
