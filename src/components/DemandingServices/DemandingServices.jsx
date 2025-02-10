@@ -25,9 +25,9 @@ const servicesData = [
 const DemandingServices = () => {
   return (
     <div className="w-full min-h-screen h-auto bg-[#EDE9E5]">
-      <div className="h-[200px] w-full  flex sm:flex-row flex-col justify-between sm:items-center items-start sm:px-16 px-4 py-20 font-lexend ">
+      <div className="h-[200px] w-full  flex sm:flex-row flex-col justify-between sm:items-center items-start sm:px-16 px-4 py-20  font-lexend ">
         <div>
-          <p className="text-4xl font-bold">We Provide Demanding Services</p>
+          <p className="sm:text-4xl text-2xl font-bold">We Provide Demanding Services</p>
           <p className="mt-3 text-sm text-[#999999]">
             Quis nulla blandit vulputate morbi adipiscing sem vestibulum. Nulla
             turpis integer dui sed

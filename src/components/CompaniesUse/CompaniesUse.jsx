@@ -23,7 +23,7 @@ const companiesData = [
 
 const CompaniesUse = () => {
   return (
-    <div className="min-h-screen h-auto w-full bg-[#EFEBE7] flex flex-col sm:px-16 px-8 justify-between py-5 font-lexend">
+    <div className="min-h-screen h-auto w-full bg-[#EFEBE7] flex flex-col sm:px-16 px-4 justify-between py-5 font-lexend">
       <p className="sm:text-4xl text-2xl font-bold text-[#1D1D1F]">
         <span className="text-[#f84e1d]">156+ </span>
         companies use Elever to<br /> power their integrations

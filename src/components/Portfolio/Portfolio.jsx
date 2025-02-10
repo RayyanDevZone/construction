@@ -47,7 +47,7 @@ const Portfolio = () => {
         </button>
       </div>
 
-      <div className="h-auto flex  overflow-x-auto whitespace-nowrap hide-scrollbar mt-10 gap-16">
+      <div className="h-auto flex  overflow-x-auto whitespace-nowrap hide-scrollbar mt-10 mb-10 sm:mb-0 gap-16">
         {cardsData.map((card, index) => (
           <div key={index} className="card sm:w-[550px] sm:h-[600px] h-[500px] w-[390px] flex-shrink-0 rounded-2xl flex flex-col bg-white">
             <div
