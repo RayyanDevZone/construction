@@ -30,7 +30,7 @@ const CompaniesUse = () => {
       </p>
       <div className="card-container flex sm:flex-row flex-col items-center w-full mb-10 gap-8 mt-8">
         {companiesData.map((company, index) => (
-          <div key={index} className="card h-[300px] sm:w-[260px] w-[350px] bg-white rounded-xl flex flex-col items-center justify-between  p-4">
+          <div key={index} className="card h-[300px] sm:w-[260px] w-[97%] bg-white rounded-xl flex flex-col items-center justify-between  p-4">
             <div className="h-[40px] w-[200px]  bg-cover bg-center mt-8" style={{ backgroundImage: `url(${company.image})` }}></div>
             <div className="h-[2px] rounded-full mt-4 w-full bg-[#f84e1d]"></div>
             <div className="flex flex-col h-2/3  mt-4">
