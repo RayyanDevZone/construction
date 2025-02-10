@@ -21,18 +21,18 @@ const FirstPage = () => {
     >
       <div className="flex flex-col justify-center sm:items-start items-center  sm:px-18 text-white font-lexend h-full">
           <p className="text-xl font-semibold ">BUILDING THE BETTER FUTURE</p>
-        <p className="sm:text-6xl text-5xl text-center mt-6 mb-6 font-bold">
+        <p className="sm:text-6xl text-4xl px-4 sm:px-0 text-center mt-6 mb-6 font-bold">
           Redefining Quality in Every <br />
           Brick and Beam
         </p>
-        <p className="text-sm mb-8 text-center">
+        <p className="text-sm mb-8 text-center px-4 sm:px-0">
           we provide a range of services including residential and commercial
           construction, <br />
           Renovations,Project Management, and custom builds.
         </p>
         <div className="flex flex-row gap-4">
-          <button className="bg-[#F84E1D] cursor-pointer text-white px-8 py-3 tracking-tighter rounded-md font-semibold text-xl">More About Us</button>
-          <button className="text-[#F84E1D] cursor-pointer bg-white px-8 py-3 tracking-tighter rounded-md font-semibold text-xl">Our Services</button>
+          <button className="bg-[#F84E1D] cursor-pointer text-white px-8 py-3 tracking-tighter  rounded-md font-semibold sm:text-xl text-md">More About Us</button>
+          <button className="text-[#F84E1D] cursor-pointer bg-white px-8 py-3 tracking-tighter rounded-md font-semibold sm:text-xl text-md">Our Services</button>
         </div>
       </div>
     </div>
