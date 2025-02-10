@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative h-22 flex flex-row items-center sm:px-18 px-4 justify-between font-lexend">
+    <div className=" h-22 flex flex-row items-center sm:px-18 px-4 justify-between font-lexend">
       <img src="https://html.themewant.com/elever/assets/images/logo/02.svg" alt="Logo" />
       <div className="lg:flex flex-row items-center gap-10 hidden">
         {["Home", "Services", "Pages", "Shop", "Project", "Blog", "Contact"].map((item, index) => (
@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`fixed top-0 right-0 h-full w-4/5 bg-white shadow-lg transform ${menuOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out`}>
+      <div className={`fixed z-999 top-0 right-0 h-full w-4/5 bg-white shadow-lg transform ${menuOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out`}>
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
           <h2 className="text-xl font-bold">Menu</h2>
           <p onClick={toggleMenu} className="cursor-pointer text-[#f84e1d] text-3xl">
