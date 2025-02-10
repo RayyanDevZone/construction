@@ -28,7 +28,7 @@ const CompaniesUse = () => {
         <span className="text-[#f84e1d]">156+ </span>
         companies use Elever to<br /> power their integrations
       </p>
-      <div className="card-container flex sm:flex-row flex-col w-full mb-10 gap-8 mt-8">
+      <div className="card-container flex sm:flex-row flex-col items-center w-full mb-10 gap-8 mt-8">
         {companiesData.map((company, index) => (
           <div key={index} className="card h-[300px] sm:w-[260px] w-[350px] bg-white rounded-xl flex flex-col items-center justify-between  p-4">
             <div className="h-[40px] w-[200px]  bg-cover bg-center mt-8" style={{ backgroundImage: `url(${company.image})` }}></div>
