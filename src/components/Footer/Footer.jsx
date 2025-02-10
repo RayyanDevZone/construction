@@ -38,21 +38,21 @@ const policies = [
 const Footer = () => {
   return (
     <div
-      className="w-full h-[550px] flex flex-col font-lexend"
+      className="w-full min-h-[550px] h-auto bg-[#1D1D1F] flex flex-col font-lexend"
       style={{
         backgroundImage: `url("https://html.themewant.com/elever/assets/images/footer/01.webp")`,
       }}
     >
-      <div className="w-full h-[70px] border-b border-[#333338] text-white uppercase flex items-center justify-center">
+      <div className="w-full h-[70px] sm:border-b border-[#333338] text-white uppercase flex flex-wrap items-center justify-center">
         {menuItems.map((item, index) => (
-          <p key={index} className="w-[155px] h-full flex justify-center items-center border border-[#333338]">
+          <p key={index} className="sm:w-[155px] w-[90px] h-full flex justify-center items-center sm:border border-[#333338]">
             {item}
           </p>
         ))}
       </div>
 
-      <div className="flex flex-row items-center justify-between h-[400px] py-16 px-12">
-        <div className="w-1/4 h-full flex flex-col">
+      <div className="flex sm:flex-row flex-col items-center justify-between min-h-[400px] py-16 sm:px-12">
+        <div className="sm:w-1/4 w-full px-4 h-full flex flex-col">
           <img
             src="https://html.themewant.com/elever/assets/images/logo/01.svg"
             alt="Elever Logo"
@@ -70,19 +70,19 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div>
+        <div className="w-full px-4 text-start mt-4 sm:mt-0">
           <h1 className="text-white font-bold text-xl mb-3">Useful Links</h1>
           {usefulLinks.map((link, index) => (
             <p key={index} className="text-[#73737E] mb-3 flex flex-row items-center gap-2 hover:text-[#f84e1d] cursor-pointer duration-100"><FaArrowRight />{link}</p>
           ))}
         </div>
-        <div>
+        <div className="w-full px-4 text-start mt-4 sm:mt-0">
           <h1 className="text-white font-bold text-xl mb-3">Quick Services</h1>
           {quickServices.map((service, index) => (
             <p key={index} className="text-[#73737E] mb-3 flex flex-row items-center gap-2  hover:text-[#f84e1d] cursor-pointer duration-100"><FaArrowRight />{service}</p>
           ))}
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full px-4 sm:px-0">
           <h1 className="text-white font-bold text-xl mb-3">Newsletter</h1>
           <p className="text-[#73737E]">
             Applications prodize before front
@@ -97,8 +97,8 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className="h-[70px] w-full border-t border-[#333338] flex items-center justify-between px-22 text-white">
-        <p>Copyright © 2025 Elever. All Rights Reserved.</p>
+      <div className="min-h-[70px] w-full border-t border-[#333338] flex items-center sm:flex-row flex-col justify-between sm:px-22 py-2 sm:py-0 text-white">
+        <p className="">Copyright © 2025 Elever. All Rights Reserved.</p>
         <div className="flex gap-10">
           {policies.map((item, index) => (
             <p key={index}>{item}</p>
