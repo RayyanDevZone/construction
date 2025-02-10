@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" h-22 flex flex-row items-center sm:px-18 px-4 justify-between font-lexend">
+    <div className="fixed top-0 bg-white w-full z-999 h-22 flex flex-row items-center sm:px-18 px-4 justify-between font-lexend">
       <img src="https://html.themewant.com/elever/assets/images/logo/02.svg" alt="Logo" />
       <div className="lg:flex flex-row items-center gap-10 hidden">
         {["Home", "Services", "Pages", "Shop", "Project", "Blog", "Contact"].map((item, index) => (
