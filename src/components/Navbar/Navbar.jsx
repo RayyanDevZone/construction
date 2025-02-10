@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col p-4 px-12  space-y-4">
           {["Home", "About", "Services", "Pages", "Shop", "Blog", "Contact"].map((item, index) => (
-            <p key={index} className="font-semibold text-[#999999] text-lg/8 cursor-pointer">{item}</p>
+            <p key={index} className="font-semibold text-[#999999] text-lg/8 cursor-pointer active:text-[#f84e1d] duration-100">{item}</p>
           ))}
           <div className="flex gap-6 mt-6">
             {socialIcons.map((Icon, index) => (
