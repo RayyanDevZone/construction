@@ -99,7 +99,7 @@ const Footer = () => {
       </div>
       <div className="min-h-[70px] w-full border-t border-[#333338] flex items-center sm:flex-row flex-col justify-between sm:px-22 py-2 sm:py-0 text-white">
         <p className="">Copyright © 2025 Elever. All Rights Reserved.</p>
-        <div className="flex gap-10">
+        <div className="flex sm:gap-10 gap-4">
           {policies.map((item, index) => (
             <p key={index}>{item}</p>
           ))}
