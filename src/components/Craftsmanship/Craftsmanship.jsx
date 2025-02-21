@@ -1,13 +1,42 @@
 import { MdCheckCircle } from "react-icons/md";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 const Craftsmanship = () => {
+
+ useGSAP(()=>{
+  gsap.from(".img-craft",{
+    opacity:0,
+    duration:1,
+    scrollTrigger:{ trigger:".img-craft" ,start:"top 80%"},
+  })
+ })
+ useGSAP(()=>{
+  gsap.from(".head-container p",{
+    opacity:0,
+    y:-100,
+    stagger:.3,
+    scrollTrigger:{ trigger:".head-container p" ,start:"top 80%"},
+  })
+ })
+ useGSAP(()=>{
+  gsap.from(".btn-craft",{
+    opacity:0,
+    duration:1,
+    scrollTrigger:{ trigger:".btn-craft" ,start:"top 80%"},
+  })
+ })
+
+
   return (
     <div className="py-20 w-full min-h-screen h-auto bg-white flex sm:flex-row flex-col items-center sm:px-16 px-5 font-lexend mb-10">
       <img
         src="https://html.themewant.com/elever/assets/images/about/02.webp"
-        className="h-[400px] w-[450px] "
+        className=" img-craft h-[400px] w-[450px] "
       />
-      <div className="sm:pl-10 flex flex-col mt-8 sm:mt-0">
+      <div className="head-container sm:pl-10 flex flex-col mt-8 sm:mt-0">
         <p className="sm:text-4xl text-3xl font-bold">
           A Tradition of Craftsmanship, Innovation, and Client-Centered
           Solutions in Every
@@ -34,7 +63,7 @@ const Craftsmanship = () => {
             Precision in Finishing Touches
           </p>
         </div>
-        <button className="bg-[#F84E1D] cursor-pointer w-56 text-white px-8 py-3 tracking-tighter rounded-md font-semibold text-lg mt-4">
+        <button className="btn-craft bg-[#F84E1D] cursor-pointer w-56 text-white px-8 py-3 tracking-tighter rounded-md font-semibold text-lg mt-4">
           More About Us
         </button>
       </div>
