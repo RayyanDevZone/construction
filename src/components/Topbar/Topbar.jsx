@@ -4,8 +4,33 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
+
 
 const Topbar = () => {
+  useGSAP(()=>{
+    gsap.from(".contactdiv p",{
+      opacity:0,
+      y:-100,
+      stagger:.3,
+      duration:1,
+      scrollTrigger:{ trigger:".contactdiv",start:"top 80%",}
+  })
+  })
+  useGSAP(()=>{
+    gsap.from(".icondiv p",{
+      opacity:0,
+      y:-100,
+      stagger:.3,
+      duration:1,
+      scrollTrigger:{ trigger:".icondiv",start:"top 80%",}
+  })
+  })
   return (
     <div className="hidden lg:flex h-14 w-full bg-[#1D1D1F] flex-row justify-between items-center px-16 font-lexend">
       <div className="contactdiv text-white flex flex-row">
