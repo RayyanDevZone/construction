@@ -1,4 +1,9 @@
 import { FaRegClock } from "react-icons/fa";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const cardData = [
   {
@@ -28,6 +33,38 @@ const cardData = [
 ];
 
 const IndustrialSolution = () => {
+
+useGSAP(()=>{
+  gsap.from(".is",{
+    opacity:0,
+    duration:.4,
+    scrollTrigger:{ trigger:".is" ,start:"top 80%"},
+    scale:0,
+    stagger:.2,
+    scrub:3,
+  })
+})
+
+useGSAP(()=>{
+  gsap.from(".card-map",{
+    opacity:0,
+    duration:.4,
+    scrollTrigger:{ trigger:".card-map" ,start:"top 80%"},
+    scale:0,
+    stagger:.3,
+  })
+})
+useGSAP(()=>{
+  gsap.from(".box",{
+    opacity:0,
+    duration:1,
+    scrollTrigger:{ trigger:".box" ,start:"top 80%"},
+    y:-100,
+    stagger:.2,
+  })
+})
+
+
   return (
     <div
       className="min-h-screen w-full flex-col flex items-center justify-center font-lexend"
@@ -35,11 +72,11 @@ const IndustrialSolution = () => {
         backgroundImage: `url("https://html.themewant.com/elever/assets/images/working-process/03.webp")`,
       }}
     >
-      <h1 className=" text-white text-[99px] font-bold hidden sm:block">INDUSTRIAL SOLUTION</h1>
-      <p className="text-white sm:text-4xl text-2xl text-center font-bold sm:mt-10 mt-[199px]">
+      <h1 className="is text-white text-[99px] font-bold hidden sm:block">INDUSTRIAL SOLUTION</h1>
+      <p className="is text-white sm:text-4xl text-2xl text-center font-bold sm:mt-10 mt-[199px]">
         What Is The Working Process Like?
       </p>
-      <p className="text-center text-white mt-10 mb-18 text-sm">
+      <p className=" is text-center text-white mt-10 mb-18 text-sm">
         Interior design is the art and science of enhancing the interiors,
         sometimes including the
         <br /> exterior, of a space or building, to achieve a healthier and more
@@ -61,8 +98,8 @@ const IndustrialSolution = () => {
                     </p>
                   </div>
                 </div>
-                <p className="text-white text-xl font-bold">{card.heading}</p>
-                <p className="text-[#999999] text-sm text-center">
+                <p className=" text-white text-xl font-bold">{card.heading}</p>
+                <p className=" text-[#999999] text-sm text-center">
                   {card.details}
                 </p>
               </div>
@@ -74,13 +111,13 @@ const IndustrialSolution = () => {
           className="
       flex sm:flex-row flex-col w-full sm:px-16 px-4 justify-center items-center h-[400px] gap-8"
         >
-          <p className="flex flex-row  items-center gap-3 sm:px-3 px-6 py-6 rounded-xl text-white bg-[#f84e1d]">
+          <p className="box flex flex-row  items-center gap-3 sm:px-3 px-6 py-6 rounded-xl text-white bg-[#f84e1d]">
             <FaRegClock />
             Sunday - Thursday: 8:00 am to 10:45 pm
           </p>
-          <p className="bg-[#141416] text-white rounded-lg flex sm:flex-row flex-col sm:items-center items-start sm:gap-20 gap-5 px-8 py-5">
-            <p className="sm:text-2xl text-[22px] font-bold">Lets Bring Your Vision to Life</p>
-            <p className="underline font-bold">Call Us For Appointment</p>
+          <p className="box bg-[#141416] text-white rounded-lg flex sm:flex-row flex-col sm:items-center items-start sm:gap-20 gap-5 px-8 py-5">
+            <p className=" sm:text-2xl text-[22px] font-bold">Lets Bring Your Vision to Life</p>
+            <p className=" underline font-bold">Call Us For Appointment</p>
           </p>
         </div>
       </div>
