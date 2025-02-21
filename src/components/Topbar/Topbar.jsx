@@ -4,6 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
+
 const Topbar = () => {
   return (
     <div className="hidden lg:flex h-14 w-full bg-[#1D1D1F] flex-row justify-between items-center px-16 font-lexend">

@@ -1,6 +1,10 @@
 import { FaLocationArrow } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 const servicesData = [
   {
     image: "https://html.themewant.com/elever/assets/images/service/icons/04.svg",
@@ -22,7 +26,17 @@ const servicesData = [
   }
 ];
 
+
 const DemandingServices = () => {
+  useGSAP(()=>{
+    gsap.from(".card",{
+      opacity:0,
+      y:-100,
+      scrollTrigger:{ trigger:".card",start:"top 80%",},
+      stagger:.3,
+      duration:1
+    })
+  })
   return (
     <div className="w-full min-h-screen h-auto bg-[#EDE9E5]">
       <div className="h-[200px] w-full  flex sm:flex-row flex-col justify-between sm:items-center items-start sm:px-16 px-4 py-20  font-lexend ">
